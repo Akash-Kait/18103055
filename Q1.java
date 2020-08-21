@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class Main
+class Q1
 { 
 	void lpsarray(String pattern, int m, int lps[]) 
 	{ 
@@ -80,7 +80,7 @@ class Main
 		System.out.println("Enter the pattern to be searched for ");
 		String string2 = obj.nextLine();
 		
-		int count = new Main().search(string2,string1); 
+		int count = new Q1().search(string2,string1); 
 		System.out.println(count); 
 	}
 }
