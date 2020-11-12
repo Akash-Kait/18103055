@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<style>
+
+	#input,#buttonID {
+		padding: 12px 20px;
+		margin: 10px 0;
+	}
+</style>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>A5</title>
+	</head>
+
+	<body>
+		<h3>CHRISTMAS TREE PATTERN</h3>
+		<form>
+			<label>Enter the height of the tree.</label>
+			<input type="text" id="input" name="input">
+			<input type="submit" value="Submit" id="buttonID">
+		</form>
+	</body>
+
+	<script>
+
+		document.getElementById("buttonID").addEventListener("click", function() {
+
+			var n = document.getElementById("input").value;
+
+			var i;
+			var j;
+
+			document.write("<h3>CHRISTMAS TREE PATTERN</h3><br>");
+			
+			for(i=0;i<n;i++) {
+
+				for(j=n-i-1; j>0; j--) {
+
+					document.write("&nbsp&nbsp");
+				}
+
+				for(j=0; j<(2*i+1); j++) {
+
+					if(j==0 && i==0) {
+						document.write("*");
+					}
+					else {
+						document.write("0");
+					}
+				}
+				document.write("<br>");
+			}        
+		}, false);
+	</script>
+</html>
